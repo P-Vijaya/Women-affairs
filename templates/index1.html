@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Search Page</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center"> Women affairs </h1>
+
+    <div class="form">
+        <form action="/" method="POST">
+            <br> women_occupation <br>
+            <select name="women_occupation" id="women_occupation:">
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option></select>
+            <br> husband_occupation <br>
+            <select name="husband_occupation" id="husband_occupation" >
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option></select>
+            <!--<br> occ_3 <br>
+            <select name="occ_3" id="occ_3" >
+                <option value="1">1</option><option value="0">0</option> </select>
+            <br> occ_4 <br>
+            <select name="occ_4" id="occ_4" >
+                <option value="1">1</option><option value="0">0</option> </select>
+            <br> occ_5 <br>
+            <select name="occ_5" id="occ_5" >
+                <option value="1">1</option><option value="0">0</option> </select>
+            <br> occ_6 <br>
+            <select name="occ_6" id="occ_6" >
+                <option value="1">1</option><option value="0">0</option> </select>
+            <br> occ_husb_2 <br>
+            <select name="occ_husb_2" id="occ_husb_2" >
+                <option value="1">1</option><option value="0">0</option> </select>
+            <br> occ_husb_3 <br>
+            <select name="occ_husb_3" id="occ_husb_3" >
+                <option value="1">1</option><option value="0">0</option> </select>
+            <br> occ_husb_4 <br>
+            <select name="occ_husb_4" id="occ_husb_4" >
+                <option value="1">1</option><option value="0">0</option> </select>
+            <br> occ_husb_5 <br>
+            <select name="occ_husb_5" id="occ_husb_5" >
+                <option value="1">1</option><option value="0">0</option> </select>
+            <br> occ_husb_6 <br>
+            <select name="occ_husb_6" id="occ_husb_6" >
+                <option value="1">1</option><option value="0">0</option> </select>-->
+            <input type="number" name="rate_marriage" id="rate_marriage" placeholder="rate_marriage(1to5)">
+            <input type="number" name="age" id="age" placeholder="age">
+            <input type="number" name="yrs_married" id="yrs_married" placeholder="yrs_married">
+            <input type="number" name="children" id="children" placeholder="children">
+            <input type="number" name="religious" id="religious" placeholder="religious(1to4)">
+            <br> 9-Grade school, 12-high school,14-Some college,16-College graduate,17-Some graduate school,20-Advanced degree<br>
+            <input type="number" name="educ" id="educ" placeholder="educ">
+            <button type="submit" class="btn btn-primary mb-2">Predict</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
